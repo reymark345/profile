@@ -196,6 +196,28 @@
                 ]
             });
 
+            $('.portfolio-popup-thumbnail .portfolio-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                adaptiveHeight: true,
+                cssEase: 'linear',
+                prevArrow: '<button class="slide-arrow prev-arrow" type="button" aria-label="Previous slide"><span>&#10094;</span></button>',
+                nextArrow: '<button class="slide-arrow next-arrow" type="button" aria-label="Next slide"><span>&#10095;</span></button>',
+                responsive: [{
+                    breakpoint: 576,
+                    settings: {
+                        arrows: false
+                    }
+                }]
+            });
+
+            $('.modal').on('shown.bs.modal', function () {
+                $(this).find('.portfolio-slider').slick('setPosition');
+            });
+
 
             $('.blog-slick-activation').slick({
                 infinite: true,

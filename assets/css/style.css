@@ -18116,6 +18116,49 @@ Rn Slick Dots Style
   left: 79%;
 }
 
+.portfolio-popup-thumbnail {
+  position: relative;
+}
+.portfolio-popup-thumbnail .slick-slider {
+  position: relative;
+}
+.portfolio-popup-thumbnail .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  color: #111;
+  font-size: 20px;
+  cursor: pointer;
+}
+.portfolio-popup-thumbnail .slick-arrow:hover {
+  background: #ffffff;
+  color: var(--color-primary);
+}
+.portfolio-popup-thumbnail .slick-prev {
+  left: 16px;
+}
+.portfolio-popup-thumbnail .slick-next {
+  right: 16px;
+}
+.portfolio-popup-thumbnail .slick-prev:before,
+.portfolio-popup-thumbnail .slick-next:before {
+  display: none;
+}
+.portfolio-popup-thumbnail .slick-arrow span {
+  display: inline-block;
+  line-height: 1;
+}
+
 .testimonial-activation {
   position: relative;
   margin: 0 80px;
